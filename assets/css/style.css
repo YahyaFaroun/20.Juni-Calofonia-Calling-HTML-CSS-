@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face{
+    font-family: Larish;
+    scr: url(../Font/LarishNeueSemibold.woff);
+    scr: url(../Font/Larish/Neue/Semibold.woff2);
+}
+
+
+body{
+    font-family: 'Work Sans', Larish;
+    margin: 0;
+    height: 500vh;
+}
+h1{
+    margin: 0;
+    font-family: Larish;
+    font-size: 7em;
+}
+h4{
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.4em;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+}
+p{
+    margin: 0;
+    font-family: Larish;
+    font-size: 1.2em;
+    font-family: 'Work Sans';
+}
+
+#linie{
+    width: 9px;
+    height: 35vh;
+}
+header{
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+header h1:last-of-type{
+    margin-top: -30px;
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10vh;
+}
+header div img{         
+    margin-left: 10%;
+    width: 100px;
+}
+header div a{
+    padding: 20px 50px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 10%;
+}
+header div a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#lastYear{
+    background-color: #000;
+    padding-top: 10vh;
+    
+}
+#lastYear p{
+    margin: 0;
+    padding-left: 8%;
+    padding-bottom: 20vh;
+    color: #fff;
+    font-size: 8em;
+    font-weight: 900;
+    width: 80%;
+    font-weight: normal;
+}
+#lastYear h4{
+    color: #fff;
+    padding-left: 8%;
+}
+#lastYear div{
+    text-align: right;
+    margin-right: -20px;
+}
+#lastYear img{
+    height: 60%;
+    width: 40%;
+    margin-top: -20vh;
+}
+
+
+
+#stuckMiddle div p{
+    line-height: 1.6em;
+}
+#stuckMiddle div:nth-of-type(1) img{
+    width: 25%;
+    margin-top: -15vh;
+    margin-left: 65%;
+}
+#stuckMiddle div:nth-of-type(2) img{
+    width: 25%;
+    margin-top: 30vh;
+    margin-left: 5%;
+}
+#stuckMiddle div:nth-of-type(3){
+    width: 35%;
+    margin-top: -10vh;
+    margin-left: 35%;
+}
+
+
+#stuckMiddle div:nth-of-type(4) img{
+    width: 25%;
+    margin-top: -5vh;
+    margin-left: 75%;
+}
+#stuckMiddle div:nth-of-type(5) img{
+    width: 25%;
+    margin-top: 0;
+    margin-left: 15%;
+}
+#stuckMiddle div:nth-of-type(6) img{
+    width: 25%;
+    margin-top: -5vh;
+    margin-left: 60%;
+}
+#stuckMiddle div:nth-of-type(7) img{
+    width: 25%;
+    margin-top: 10vh;
+    margin-left: 0;
+}
+#stuckMiddle div:nth-of-type(8){
+    width: 35%;
+    margin-top: -30vh;
+    margin-left: 30%;
+}
+#stuckMiddle div:nth-of-type(9) img{
+    width: 35%;
+    margin-top: 20vh;
+    margin-left: 50%;
+}
+
+
+
+#bear{
+    background-color: black;
+    margin-top: -15vh; 
+}
+#bear article{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90vh;
+    padding-top: 30vh;
+    color: white;
+}
+#bear article div:first-child{
+    padding-left: 10%;
+}
+#bear article div:last-child{
+    padding-top: 10vh;
+    padding-right: 10%;
+}
+#bear div:first-of-type p{
+    font-size: 1.4em;
+}
+#bear div:last-of-type p{
+    font-size: 2.4em;
+    font-family: 'Larsh';
+}
+#bear span{
+    font-size: 1.4em;
+}
+#bear img:nth-of-type(1){
+    width: 55%;
+    margin-left: 10%;
+    transform: translateY(20vh);
+}
+#bear img:nth-of-type(2){
+    width: 30%;
+    margin-left: -5%;
+    transform: translateY(10vh);
+}
+
+
+
+#poppy{
+    overflow: hidden;
+    position: relative;
+    height: 260vh;
+}
+/* drehendes Bild */
+#poppy img:nth-of-type(1){
+    position: absolute;
+    width: 30%;
+    top: -15vh;
+    right: -10vw;
+    animation: turnAround infinite 7s linear;
+    z-index: -1;
+    overflow: hidden;
+}
+@keyframes turnAround{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+
+#poppy article{
+    margin-top: 30vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90vh;
+    padding-top: 30vh;
+    color: black;
+}
+#poppy article div:first-child{
+    padding-left: 10%;
+}
+#poppy article div:last-child{
+    padding-top: 10vh;
+    padding-right: 10%;
+}
+#poppy div:first-of-type p{
+    font-size: 1.4em;
+}
+#poppy div:last-of-type p{
+    font-size: 2.4em;
+    font-family: 'Larsh';
+}
+#poppy span{
+    font-size: 1.4em;
+}
+
+#poppy img:nth-of-type(2){
+    width: 55%;
+    margin-left: 35%;
+    
+}
+#poppy img:nth-of-type(3){
+    width: 30%;
+    transform: translateY(-120vh);
+    margin-left: 15%;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    padding-left: 5%;
+    position: relative;
+    overflow: hidden;
+}
+footer h3{
+    padding-top: 20vh;
+}
+footer p{
+    font-size: 2.4em;
+    font-family: Larsh;
+    font-weight: 800;
+    width: 45%;
+    margin-bottom: 5vh;
+}
+#button{
+    margin-top: 20vh;
+    border: 1px solid #fff;
+    padding: 15px 35px;
+}
+footer a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+footer section{
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+footer section div:first-of-type{
+    grid-column: 1/2;
+}
+footer section div:last-of-type{
+    grid-column: 2/3;
+    width: 50%;
+    padding-left: 50%;
+}
+footer section div:first-of-type a img{
+    width: 3%;
+    border: none;
+    margin-bottom: 2vh;
+}
+footer section div:last-of-type img{
+    width: 25%;
+}
+footer section p{
+    font-size: 1.6em;
+    font-family: 'Work Sans';
+    font-weight: normal;
+    margin: 0;
+}
+
+
+#banner{
+    background: #FFFFFF;
+    padding: 20px 0;
+    width: 180vw;
+    position: absolute;
+    top: 0vh;
+    transform: rotate(45deg);
+    right: -100vh;
+    white-space: nowrap;
+}
+#banner h1{
+    font-family: 'Larish';
+    font-size:5em;
+    text-transform: uppercase;
+    margin: 0;
+    animation:move-text infinite 15s linear;
+    color: black;
+}
+#banner span{
+    -webkit-text-stroke: 2px #fff;
+    color: #fff;
+    -webkit-text-stroke-color:#000;
+}
+@keyframes move-text{
+    0%,100%{
+        transform:translateX(-60%);
+    }
+    50%{
+        transform: translateX(30%);
+    }
+}
+
+
+
+
+
+
+    
